@@ -7,12 +7,12 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import {ScrollView} from 'react-native-gesture-handler';
-import GLOBALS from '../../../constants';
+import GLOBALS from '../../../../constants';
 import uuid from 'react-native-uuid';
-import {MakeQuestion} from '../../../utils/database';
-import {CommonButton, CommonTextInput} from '../../../components';
+import {MakeQuestion} from '../../../../utils/database';
+import {CommonButton, CommonTextInput} from '../../../../components';
 const {COLORS} = GLOBALS;
-import styles from './addQstyle';
+import styles from './styles';
 
 export const AddQuestions = ({navigation, route}) => {
   const [currentAssignmentId, setCurrentAssignmentId] = useState(

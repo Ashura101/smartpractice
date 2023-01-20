@@ -1,5 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
-import COLORS from '../../../constants/colors';
+import COLORS from '../../../../constants/colors';
 
 const {height, width} = Dimensions.get('window');
 
@@ -34,6 +34,7 @@ export default styles = StyleSheet.create({
   timerPressable: {
     paddingHorizontal: 20,
     paddingVertical: 5,
+    marginRight: 5,
     backgroundColor: COLORS.YELLOW,
     borderRadius: 20,
     alignSelf: 'flex-end',

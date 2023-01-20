@@ -12,15 +12,15 @@ import {
   StyleSheet,
 } from 'react-native';
 import React, {useEffect, useRef, useState} from 'react';
-import {CommonButton, CustomHeader} from '../../../components';
+import {CommonButton, CustomHeader} from '../../../../components';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {
   GetAssignmentById,
   GetQuestionsByAssignmentId,
   GetTimeById,
-} from '../../../utils/database';
-import styles from './assignmentStyle';
-import GLOBALS from '../../../constants';
+} from '../../../../utils/database';
+import styles from './styles';
+import GLOBALS from '../../../../constants';
 const {COLORS} = GLOBALS;
 const {height, width} = Dimensions.get('window');
 
@@ -162,11 +162,11 @@ export const Assignment = ({route, navigation}) => {
       <StatusBar backgroundColor={COLORS.WHITE} barStyle="dark-content" />
       <ImageBackground
         style={styles.backgroundImage}
-        source={require('../../../assets/images/background.png')}>
+        source={require('../../../../assets/images/background.png')}>
         <View style={styles.smartIcon}>
           <View style={{flex: 1}}>
             <Image
-              source={require('../../../assets/images/logo.png')}
+              source={require('../../../../assets/images/logo.png')}
               style={{resizeMode: 'contain', height: 80, width: 80}}
             />
           </View>

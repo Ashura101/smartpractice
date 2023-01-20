@@ -7,14 +7,18 @@ import {
   Button,
 } from 'react-native';
 import React, {useState, useEffect} from 'react';
-import {CommonButton, CommonTextInput, CustomHeader} from '../../../components';
+import {
+  CommonButton,
+  CommonTextInput,
+  CustomHeader,
+} from '../../../../components';
 import uuid from 'react-native-uuid';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import DateTimePicker from '@react-native-community/datetimepicker';
-import {MakeAssignment} from '../../../utils/database';
+import {MakeAssignment} from '../../../../utils/database';
 import Icon from 'react-native-vector-icons/Ionicons';
-import COLORS from '../../../constants/colors';
-import styles from './createAssignStyle';
+import COLORS from '../../../../constants/colors';
+import styles from './styles';
 
 export const CreateAssignment = ({navigation}) => {
   const [title, setTitle] = useState('');

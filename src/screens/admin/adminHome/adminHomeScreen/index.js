@@ -7,10 +7,10 @@ import {
   ScrollView,
 } from 'react-native';
 import React, {useState, useEffect} from 'react';
-import {GetAllAssignments} from '../../../utils/database';
-import {CustomHeader} from '../../../components';
-import styles from './homeStyle';
-import COLORS from '../../../constants/colors';
+import {GetAllAssignments} from '../../../../utils/database';
+import {CustomHeader} from '../../../../components';
+import styles from './styles';
+import COLORS from '../../../../constants/colors';
 
 export const AdminHome = ({navigation}) => {
   let date = new Date().getDate();

@@ -7,14 +7,14 @@ import {
   Alert,
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
-import {CustomHeader} from '../../../components';
-import {GetAllAssignments} from '../../../utils/database';
+import {CustomHeader} from '../../../../components';
+import {GetAllAssignments} from '../../../../utils/database';
 import {
   GetAssignmentById,
   GetQuestionsByAssignmentId,
-} from '../../../utils/database';
-import COLORS from '../../../constants/colors';
-import styles from './homeStyle';
+} from '../../../../utils/database';
+import COLORS from '../../../../constants/colors';
+import styles from './styles';
 
 export const Home = ({navigation}) => {
   let date = new Date().getDate();
